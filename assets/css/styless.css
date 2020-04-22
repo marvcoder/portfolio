@@ -1,0 +1,252 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    background-color: #fafafa;
+}
+* {
+    box-sizing: border-box;
+}
+h2 {
+    color: #342b2c;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 24px;
+    margin-bottom: 38px;
+}
+img {
+    width: 450px;
+}
+.header {
+    align-items: center;
+    background-color: #342b2c;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+  }
+figure.logo {
+    margin: 0px;
+    width: 20%;
+}
+.header__img {
+    margin: 0px;
+    height: 70px;
+    width: 220px;
+}
+.header__menu {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+.header__menu ol {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 50%;
+    margin: 0px 20px 0px 0px;
+}
+.header__menu li {
+    padding: 0px 15px 0px 15px;
+    font-weight: bold;
+}
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 18px;
+}
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+.container {
+    margin: 0 auto;
+    width: 1050px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap: nowrap;
+}
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #342b2c;
+}
+.hero img{
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 20px;
+}
+h2 {
+    text-transform: uppercase;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.project {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    background: white;
+    box-sizing: border-box;
+}
+.project__details {
+    width: 50%;
+    padding: 30px;
+    border-radius: 5px;
+}
+.project_imageContainer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+}
+.project_title {
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+}
+.project_course {
+    margin: 10px 0px 10px 0px;
+}
+
+.project_date {
+    margin: 10px 0px 10px 0px;
+}
+.project_url {
+    margin: 10px 0px 10px 0px;
+
+}
+.project_description {
+    font-size: 20px;
+}
+.project b {
+    font-family: var(--font-title);
+    letter-spacing: 0.079em;
+}
+
+/* Footer */
+.footer {
+    background-color: #342b2c;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.footer a {
+    color: white;
+}
+
+/* Events */
+.event {
+    margin-top: 15px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.event_imageContainer {
+    margin: 0 auto;
+}
+.event_image {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.event_url {
+    color: black;
+    border: 1px solid ;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.event_detail {
+    margin: 40px 40px;
+    margin-top: -53px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background-color: wheat;
+}
+.event-list {
+    margin: 0 auto;
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.event_description {
+    text-align: left;
+}
+/* Contacts */
+.contact {
+    background-color: #d2c6b2;
+    color: white;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+
+}
+.social-link.twitter {
+    background-image: url(../img/icons8-twitter.svg);
+    background-size: 50px 50px;
+}
+.social-link.facebook {
+    background-image: url(../img/icons8-facebook.svg);
+    background-size: 50px 50px;
+}
+.social-link.github {
+    background-image: url(../img/icons8-github.svg);
+    background-size: 50px 50px;
+}
+.social-link.instagram {
+    background-image: url(../img/icons8-instagram.svg);
+    background-size: 50px 50px;
+}
+.contact__email{
+    margin-left: 30px;
+}
+.contact__email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    background-image: url(../img/icons8-nuevo-post-30.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    
+}
+.contact__email button {
+    background: transparent;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact__email h3 {
+    font-family: 'Didact Gothic', sans-serif;
+    color: black;
+    font-size: 20px;
+}
