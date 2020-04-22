@@ -24,8 +24,7 @@ img {
     display: flex;
     height: 70px;
     justify-content: space-between;
-    top: 0px;
-    width: 100%;
+    flex-wrap: wrap;
   }
 figure.logo {
     margin: 0px;
@@ -62,19 +61,12 @@ figure.logo {
 .header__menu li a:hover {
     text-decoration: underline;
 }
-.container {
-    margin: 0 auto;
-    width: 1050px;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    flex-wrap: nowrap;
-}
 /* Hero */
 .hero {
     display: flex;
     justify-content: space-between;
     background-color: #342b2c;
+    flex-wrap: wrap;
 }
 .hero img{
     object-fit: cover;
@@ -96,20 +88,19 @@ h2 {
     border: 1px solid gray;
     border-radius: 20px;
     margin: 5px;
+    margin-bottom: 15px ;
     padding: 10px;
     background: white;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project__details {
     width: 50%;
-    padding: 30px;
-    border-radius: 5px;
+
 }
 .project_imageContainer {
     width: 50%;
-    margin: 0 auto;
-    padding: 5px;
-    background-color: white;
 }
 .project_title {
     font-size: 30px;
@@ -130,7 +121,7 @@ h2 {
     font-size: 20px;
 }
 .project b {
-    font-family: var(--font-title);
+    font-family: 'Didact Gothic', sans-serif;;
     letter-spacing: 0.079em;
 }
 
@@ -140,6 +131,7 @@ h2 {
     color: white;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .footer a {
     color: white;
@@ -147,8 +139,8 @@ h2 {
 
 /* Events */
 .event {
-    margin-top: 15px;
-    width: 480px;
+    margin: 1%;
+    width: 50%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -171,20 +163,16 @@ h2 {
     border-radius: 5px;
 }
 .event_detail {
-    margin: 40px 40px;
-    margin-top: -53px;
+    margin: 20px 40px;
+    margin-top: -40px;
     position: relative;
     padding: 20px;
     text-align: center;
     background-color: wheat;
 }
 .event-list {
-    margin: 0 auto;
-    width: 1050px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .event_description {
     text-align: left;
@@ -193,11 +181,11 @@ h2 {
 .contact {
     background-color: #d2c6b2;
     color: white;
-    height: 140px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 .social-link {
@@ -249,4 +237,27 @@ h2 {
     font-family: 'Didact Gothic', sans-serif;
     color: black;
     font-size: 20px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/* Responsive Design -- Desktop first*/
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
 }
