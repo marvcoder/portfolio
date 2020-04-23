@@ -16,7 +16,7 @@ h2 {
     margin-bottom: 38px;
 }
 img {
-    width: 450px;
+    width: 100%;
 }
 .header {
     align-items: center;
@@ -26,9 +26,8 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-figure.logo {
-    margin: 0px;
-    width: 20%;
+figure {
+    margin: 0;
 }
 .header__img {
     margin: 0px;
@@ -36,18 +35,18 @@ figure.logo {
     width: 220px;
 }
 .header__menu {
-    margin-right: 0px;
-    margin-left: 0px;
+    height: inherit;
   }
 .header__menu ol {
     display: flex;
     list-style: none;
-    height: 100%;
-    width: 50%;
-    margin: 0px 20px 0px 0px;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 .header__menu li {
-    padding: 0px 15px 0px 15px;
+    padding: 0;
     font-weight: bold;
 }
 .header__menu li a {
@@ -84,7 +83,6 @@ h2 {
 }
 .project {
     display: flex;
-    justify-content: space-between;
     border: 1px solid gray;
     border-radius: 20px;
     margin: 5px;
@@ -241,6 +239,7 @@ h2 {
 .container {
     margin: 0 auto;
     max-width: 1000px;
+    flex: 1;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -252,11 +251,61 @@ h2 {
 @media screen and (max-width: 1024px){
 
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header__menu ol {
+        display: block;
+    }
+    .header__menu li {
+        height: 50px;
+    }
+    .header__menu li a {
+        justify-content: center;
+    }
+    figure.logo {
+        text-align: center;
+    }
 
+    .project {
+        display: block;
+    }
+    .project_imageContainer {
+        width: auto;
+        text-align: center;
+    }
+    .project__details {
+        width: auto;
+        font-size: 16px;
+    }
+    .project_course, .project_date, .project_url {
+        margin: .3em 0;
+    }
+    .project_title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project_url {
+        font-size: 1em;
+    }
+    .project_course {
+        font-size: 1em;
+    }
+    .project_date {
+        font-size: 1em;
+    }
+    .project_description {
+        font-size: .8em;
+    }
 }
-@media screen and (max-width: 480px){
 
+@media screen and (max-width: 480px){
+    .project__details {
+        width: auto;
+        font-size: 12 px;
+    }
 }
 @media screen and (max-width: 320px){
 
