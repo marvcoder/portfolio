@@ -6,6 +6,19 @@ body {
 * {
     box-sizing: border-box;
 }
+h1 {
+    font-size: 50px;
+    line-height: 0.8;
+    color: white;
+    margin: 0;
+}
+h1 strong {
+    color: wheat;
+    font-size: 20px;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+  }
 h2 {
     color: #342b2c;
     text-transform: uppercase;
@@ -62,15 +75,17 @@ figure {
 }
 /* Hero */
 .hero {
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: #342b2c;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
 }
 .hero img{
     object-fit: cover;
-    height: 400px;
-    width: 100%;
+    width: 60%;
 }
 
 /* Portfolio */
@@ -252,8 +267,26 @@ h2 {
 
 /* Responsive Design -- Desktop first*/
 @media screen and (max-width: 1024px){
-
-}
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 5em;
+      }
+      .hero img {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      h1 {
+        font-size: 3em;
+        z-index: 2;
+      }
+    }
 @media screen and (max-width: 767px){
     .header {
         display: block;
@@ -312,6 +345,9 @@ h2 {
 }
 
 @media screen and (max-width: 480px){
+    h1 {
+        font-size: 2em;
+    }    
     .project__details {
         font-size: 12 px;
     }
@@ -344,5 +380,14 @@ h2 {
         border: 1px solid transparent;
     }
 @media screen and (max-width: 320px){
-
+    h1 {
+        font-size: 1.3em;
+        /* background: rgba(0,0,0,.5) */
+    }
+    h1 strong {
+        font-size: 0.6em;
+    }
+    .hero {
+        padding: 2em 1em;
+    }
 }
